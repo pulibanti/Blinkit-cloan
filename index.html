@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blinkit is a online delivery application that is used to delivered groceries in minutes">
+    <title>Everything delivered in minutes</title>
+    <link rel="shortcut icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    
+      <nav class="lr-nav-bar">
+        <div class="flex-item-1">
+          <div class="logo">
+            <a href="#"
+              ><svg
+                width="134"
+                height="30"
+                viewBox="0 0 114 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z"
+                  fill="#F8CB46"
+                ></path>
+                <path
+                  d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z"
+                  fill="#54B226"
+                ></path>
+                <path
+                  d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                  fill="#54B226"
+                ></path>
+                <path
+                  d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z"
+                  fill="#54B226"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="location">
+            <a class="link" href="#"
+              ><div class="delivery-time">Delivery in 20 minutes</div></a>
+              <a class="link" href="#"
+              ><div class="location-desc">Delhi, India</div></a>
+          </div>
+        </div>
+        <div class="search-bar flex-item-2">
+          <div class="search-icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <div class="input">
+            <input type="text" placeholder='Search "butter"' />
+          </div>
+        </div>
+        <div class="flex-item-3">
+          <a class="link" href="#"><div class="login">Login</div></a>
+          <a class="link" href="#">
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <div class="cart-name">My Cart</div>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <main>
+        <section class="top-hero">
+          <div class="container">
+            <a href="#">
+              <img
+                class="top-banner"
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg"
+                alt="section-1-image"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="top-hero-main-category">
+          <div class="container flex">
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/Pet-Care_WEB.jpg
+              "
+                alt="category-1"
+              />
+            </div>
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/summer_WEB.jpg
+              "
+                alt="category-2"
+              />
+            </div>
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/electronic-WEB-1.jpg
+              "
+                alt="category-3"
+              />
+            </div>
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png
+              "
+                alt="category-4"
+              />
+            </div>
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/electronic-WEB-1.jpg
+              "
+                alt="category-3"
+              />
+            </div>
+            <div class="image-1">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/mango-WEB-1.png
+              "
+                alt="category-4"
+              />
+            </div>
+            <!-- <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2023-03/staples-WEB.jpg
+              "
+                alt="category-5"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=720/layout-engine/2022-06/morning-banner.jpg
+              "
+                alt="category-6"
+              />
+            </div> -->
+          </div>
+        </section>
+        <section class="top-hero-secondary-category">
+          <div class="container grid grid--10-col">
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png
+            "
+                alt="image-1"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png
+            "
+                alt="image-2"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png
+  
+            "
+                alt="image-3"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png
+  
+            "
+                alt="image-4"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png
+  
+            "
+                alt="image-5"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png
+  
+            "
+                alt="image-6"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png
+  
+            "
+                alt="image-7"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png
+  
+            "
+                alt="image-8"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png
+  
+            "
+                alt="image-9"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-10.png
+  
+            "
+                alt="image-10"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-11.png
+  
+            "
+                alt="image-11"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-12.png
+  
+            "
+                alt="image-12"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-13.png
+  
+            "
+                alt="image-13"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-14.png
+  
+            "
+                alt="image-14"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-15.png
+  
+            "
+                alt="image-15"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-16.png
+  
+            "
+                alt="image-16"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-17.png
+  
+            "
+                alt="image-17"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-18.png
+  
+            "
+                alt="image-18"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-19.png
+  
+            "
+                alt="image-19"
+              />
+            </div>
+            <div class="image">
+              <img
+                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=270/layout-engine/2022-11/Slice-20.png
+            "
+                alt="image-20"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="milk-bread container">
+          <div class="section-info">
+            <div class="section-desc">Dairy, Bread & Eggs</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <!-- <div class="card-flex"> -->
+          <div class="cards-line">
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/10491a.jpg"
+                  alt="milk maind sweetend"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Nestle Milkmaid Sweetened Condensed Milk</div>
+                  <div class="weight">380 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹139</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/483705a.jpg?ts=1657805510"
+                  alt="white eggs"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Table White Eggs - 30 Pieces Tray</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/24194a.jpg?ts=1685012648"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Harvest Gold Hearty Brown Bread</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/192a.jpg?ts=1644908944"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Paneer</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/160a.jpg?ts=1654778815"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Amul Salted Butter</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/19512a.jpg?ts=1647923044"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Amul Taaza Toned Fresh Milk</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+        <section class="rollingpaper-tobacco container">
+          <div class="section-info">
+            <div class="section-desc">Rolling paper & tobacco</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <div class="cards-line">
+            <div class="cards" style="max-width: 23rem">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Snacks-Munchies container">
+          <div class="section-info">
+            <div class="section-desc">Snacks & Munchies</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <div class="cards-line">
+            <div class="cards" style="max-width: 23rem">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Hookah container">
+          <div class="section-info">
+            <div class="section-desc">Hookah</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <div class="cards-line">
+            <div class="cards" style="max-width: 23rem">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Cold-Drinks-Juices container">
+          <div class="section-info">
+            <div class="section-desc">Cold Drinks & Juices</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <div class="cards-line">
+            <div class="cards" style="max-width: 23rem">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Candies-Gums container">
+          <div class="section-info">
+            <div class="section-desc">Candies & Gums</div>
+            <div class="section-see-all">
+              <a href="#">see all</a>
+            </div>
+          </div>
+          <div class="cards-line">
+            <div class="cards" style="max-width: 23rem">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="product-img">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/86446a.jpg?ts=1641540332"
+                  alt="curd-image"
+                />
+              </div>
+              <div class="card-padding">
+                <div class="time-to-delivery">
+                  <div class="icon">
+                    <img
+                      src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=90/assets/eta-icons/15-mins.png"
+                      alt="timer-icon"
+                    />
+                  </div>
+                  <div class="time">
+                    <div class="time-min">16 MIN</div>
+                  </div>
+                </div>
+                <div class="product-name">
+                  <div class="name">Mother Dairy Classic Curd</div>
+                  <div class="weight">400 g</div>
+                </div>
+                <div class="cost-buy">
+                  <div class="cost">₹34</div>
+                  <div class="buy">
+                    <button class="add-btn">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer container">
+        <div class="footer-container">
+          <div class="usefull-links">
+            <div class="footer-title">
+              <h3>Useful Links</h3>
+            </div>
+            <div class="footer-flex">
+              <div class="links-1">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#">About</a></li>
+                  <li><a class="list-links" href="#">Careers</a></li>
+                  <li><a class="list-links" href="#">Blog</a></li>
+                  <li><a class="list-links" href="#">Press</a></li>
+                  <li><a class="list-links" href="#">Lead</a></li>
+                  <li><a class="list-links" href="#">Value</a></li>
+                </ul>
+              </div>
+              <div class="links-2">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#">Privacy</a></li>
+                  <li><a class="list-links" href="#">Terms</a></li>
+                  <li><a class="list-links" href="#">FAQ's</a></li>
+                  <li><a class="list-links" href="#">Security</a></li>
+                  <li><a class="list-links" href="#">Mobile</a></li>
+                  <li><a class="list-links" href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="links-3">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#">Partner</a></li>
+                  <li><a class="list-links" href="#">Express</a></li>
+                  <li><a class="list-links" href="#">Seller</a></li>
+                  <li><a class="list-links" href="#">Spotlight</a></li>
+                  <li><a class="list-links" href="#">Ware house</a></li>
+                  <li><a class="list-links" href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="categories">
+            <div class="footer-title-1">
+              <h3>categories</h3>
+              <a href="#">see all</a>
+            </div>
+            <div class="footer-flex">
+              <div class="links-1">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#"></a>Vegetables & Fruits</a></li>
+                  <li><a class="list-links" href="#">Cold Drinks & Juices</a></li>
+                  <li><a class="list-links" href="#">Bakery & Biscuits</a></li>
+                  <li><a class="list-links" href="#">Dry Fruits, Masala & Oil</a></li>
+                  <li><a class="list-links" href="#">Organic & Premium</a></li>
+                  <li><a class="list-links" href="#">Pharma & Wellness
+                  </a></li>
+                  <li><a class="list-links" href="#">Personal Care
+                  </a></li>
+                  <li><a class="list-links" href="#">Beauty & Cosmetics
+                  </a></li>
+                </ul>
+              </div>
+              <div class="links-2">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#">
+                    Dairy & Breakfast</a></li>
+                  <li><a class="list-links" href="#">
+                    Instant & Frozen Food</a></li>
+                  <li><a class="list-links" href="#">
+                    Sweet Tooth</a></li>
+                  <li><a class="list-links" href="#">Sauces & Spreads</a></li>
+                  <li><a class="list-links" href="#">
+                    Paan Corner</a></li>
+                  <li><a class="list-links" href="#">Cleaning Essentials</a></li>
+                  <li><a class="list-links" href="#">Ice Creams & Frozen Desserts</a></li>
+                  <li><a class="list-links" href="#">
+                    Toys & Games</a></li>
+                </ul>
+              </div>
+              <div class="links-3">
+                <ul class="list-items">
+                  <li><a class="list-links" href="#">
+                    Munchies</a></li>
+                  <li><a class="list-links" href="#">Tea, Coffee & Health Drinks</a></li>
+                  <li><a class="list-links" href="#">
+                    Atta, Rice & Dal</a></li>
+                  <li><a class="list-links" href="#">Chicken, Meat & Fish</a></li>
+                  <li><a class="list-links" href="#">
+                    Baby Care</a></li>
+                  <li><a class="list-links" href="#">
+                    Home & Office</a></li>
+                    <li><a class="list-links" href="#">
+                      Pet Care</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="rights">
+            <p>© Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023</p>
+          </div>
+          <div class="apps">
+            <div>Download App</div>
+            <div class="app-store">
+              <img src="https://blinkit.com/d61019073b700ca49d22.png" alt="app-store">
+            </div>
+            <div class="play-store">
+              <img src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt="play-store">
+            </div>
+          </div>
+          <div class="social-links">
+            <div class="facebook">
+              <a href="#"><ion-icon class="social-icons" name="logo-facebook"></ion-icon></a>
+            </div>
+            <div class="twitter">
+              <a href="#">
+                <ion-icon class="social-icons" name="logo-twitter"></ion-icon>
+              </a>
+            </div>
+            <div class="insta">
+              <a href="#">
+                <ion-icon class="social-icons" name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="linkedin">
+              <a href="#"><ion-icon class="social-icons" name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <p>
+            “Blinkit” is owned &amp; managed by "Blink Commerce Private Limited" (formerly known as Grofers India Private Limited) and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”.
+          </p>
+        </div>
+      </footer>
+    
+  </body>
+</html>
